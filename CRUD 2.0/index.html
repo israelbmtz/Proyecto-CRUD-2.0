@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>CRUD</title>
+</head>
+
+<header>
+    <h1 class="crud__title">Ingreso de Usuarios por correo</h1>
+</header>
+
+<body>
+    <main class="container">
+
+        <section class="crud">
+            
+            <form id="formRegister" class="crud__form">
+                <input type="text" placeholder="Nombre" id="nameInput" class="form__input">
+                <input type="email" placeholder="Email" id="emailInput" class="form__input">
+                <button type="submit" id="submitButton" class="button button--primary">Ingresar</button>
+            </form>
+            <table class="crud__table">
+                <thead>
+                    <tr>
+                        <th class="table__header">Nombre Completo</th>
+                        <th class="table__header">Correo</th>
+                        <th class="table__header">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody" class="table__body">
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
